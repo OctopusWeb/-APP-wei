@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <title>“牵家万护”的“微小保”</title>
+    <link rel="stylesheet" href="assets/css/style.min.css"/>
+</head>
+<body >
+<audio id="back_music" src="assets/mp3/111.mp3" loop="loop" preload="auto"></audio>
+<div class="app">
+    <div id="loadingPage" class="page">
+        <div id="content">
+        	<img src="assets/images/loadingPage/app_product.png" id="app_product"/>
+            <img id="logo" src="assets/images/loadingPage/logo.png"/>
+            <img id="t0" src="assets/images/loadingPage/t0.png"/>
+            <img id="t1" src="assets/images/loadingPage/t1.png"/>
+            <img id="loading" src="assets/images/loadingPage/loading.gif"/>
+        </div>
+    </div>
+</div>
+
+<div id="page0" class="page hidden">
+    <div id="bts">
+        <div id="container">
+            <div class="bt" style="left: 3px; top: 22px;">
+                <img src="assets/images/page0/t5.png" style="width:77px;left: 18px; top:5px;"/>
+            </div>
+            <div class="bt" style="left: 110px; top: 41px;">
+                <img src="assets/images/page0/t1.png" style="width:77px;left: 18px; top:5px;"/>
+            </div>
+            <div class="bt" style="left: 110px; top: 3px;">
+                <img src="assets/images/page0/t0.png" style="width:77px;left: 18px; top:5px;"/>
+            </div>
+            <div class="bt" style="left: 218px; top: 22px;">
+                <img src="assets/images/page0/t3.png" style="width:77px;left: 18px; top:5px;"/>
+            </div>
+            <div class="bt" style="left: 218px; top: 60px;">
+                <img src="assets/images/page0/t4.png" style="width:77px;left: 18px; top:5px;"/>
+            </div>
+            <div class="bt" style="left: 110px; top: 79px;">
+                <img src="assets/images/page0/t2.png" style="width:43px;left: 35px; top:5px;"/>
+            </div>
+            <div class="bt" style="left: 3px; top: 60px;">
+                <img src="assets/images/page0/t6.png" style="width:77px;left: 18px; top:5px;"/>
+            </div>
+            <div class="bt" style="left: 110px; top: 117px;">
+                <img src="assets/images/page0/t9.png" style="width:70px;left: 22px; top:10px;"/>
+            </div>
+            <div class="bt btStyle0" style="left: 3px; top: 98px;">
+                <img src="assets/images/page0/t7.png" style="width:77px;left: 18px; top:5px;"/>
+            </div>
+            <div class="bt btStyle1" style="left: 218px; top: 98px;">
+                <img src="assets/images/page0/t8.png" style="width:77px;left: 18px; top:5px;"/>
+            </div>
+            <div class="light" style="left: 17px; top: 93px;"></div>
+            <div class="light" style="left: 123px; top: 111px;"></div>
+            <div class="light" style="left: 235px; top: 19px;"></div>
+        </div>
+    </div>
+    <div id="view360">
+        <div id="container">
+            <div class="center">
+                <div id="title"></div>
+                <div class="dot selected" style="top:196px;"></div>
+                <div class="dot" style="top:264px;"></div>
+                <div class="dot" style="top:326px;"></div>
+                <canvas id="mc" width="400" height="370"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="location" class="page hidden">
+
+    <div id="content">
+        <div id="back">
+            <img src="assets/images/helpPage/back.png" alt="返回"/>
+        </div>
+        <audio id="myaudio1" src="assets/mp3/boot.mp3"></audio>
+        <div id="product">
+            <img src="assets/images/helpPage/product.png" alt="产品" id="productImg"/>
+            <canvas id="mc" width="67" height="67"></canvas>
+            <h1>开机定位</h1>
+            <h2>(长按)</h2>
+        </div>
+        <div id="showBtn">
+            <div id="btn_1">
+            </div>
+            <div id="btn_2">
+            </div>
+        </div>
+        <div id="productShow">
+            <img src="assets/images/location/phone.png" alt="手机" id="phone"/>
+
+            <div class="locationShow1">
+                <img src="assets/images/location/location1.png" alt="位置一" id="location1"/>
+            </div>
+            <div class="locationShow2">
+                <img src="assets/images/location/location2.png" alt="位置一" id="location2"/>
+            </div>
+        </div>
+        <div id="icon1">
+            <h3>定位:超强定位功能，轻松找到千里之外的你</h3>
+        </div>
+    </div>
+</div>
+
+<div id="helpPage" class="page hidden">
+	<audio id="myaudio1" src="assets/mp3/communi.mp3"></audio>
+    <div id="content">
+        <div id="back">
+            <img src="assets/images/helpPage/back.png" alt="返回"/>
+        </div>
+        <div id="product">
+            <img src="assets/images/helpPage/product.png" alt="产品" id="productImg"/>
+            <canvas id="mc" width="67" height="67"></canvas>
+            <h1>一键呼救</h1>
+            <h2>(长按)</h2>
+        </div>
+        <div id="productShow">
+            <img src="assets/images/helpPage/phone.png" alt="手机" id="phone"/>
+            <img src="assets/images/helpPage/helpMessage.png" id="helpMessage"/>
+             <img src="assets/images/location/bo.gif" id="line1"/>
+        </div>
+        <div id="icon1">
+            <h3>一键呼救：家人安全有保障</h3>
+        </div>
+    </div>
+</div>
+
+<div id="lightingPage" class="page hidden">
+
+    <div id="black"></div>
+    <div id="content">
+        <div id="back">
+            <img src="assets/images/helpPage/back.png" alt="返回"/>
+        </div>
+        <div id="product">
+            <img src="assets/images/lightingPage/light.png" alt="高光" id="light"/>
+            <img src="assets/images/helpPage/product.png" alt="产品" id="productImg"/>
+            <canvas id="mc" width="67" height="67"></canvas>
+            <div id="iconBtn"></div>
+            <h1>照明</h1>
+            <h2>(短按)</h2>
+        </div>
+        <div id="icon1">
+            <h3>照明：照明功能，便捷使用</h3>
+        </div>
+    </div>
+</div>
+
+<div id="longlifePage" class="page hidden">
+    <div id="content">
+        <div id="back">
+            <img src="assets/images/helpPage/back.png" alt="返回"/>
+        </div>
+        <div id="day">
+            <canvas id="mc" width="136" height="167"></canvas>
+        </div>
+        <div id="product">
+            <img src="assets/images/helpPage/product.png" alt="产品" id="productImg"/>
+        </div>
+        <div id="icon1">
+            <h3>超长续航：续航保障，超长待机时间</h3>
+        </div>
+    </div>
+</div>
+
+<div id="introducePage" class="page hidden">
+
+    <div id="back">
+        <img src="assets/images/helpPage/back.png" alt="返回"/>
+    </div>
+    <div id="content">
+        <div id="product">
+            <img src="assets/images/helpPage/product.png" alt="产品" id="productImg"/>
+            <div id="introduce">
+		        <div class="introduce0" id="introduce1">
+		            <h1>充电接口、LED</h1>
+		            <img src="assets/images/introducePage/1.png" class="point">
+		        </div>
+		        <div class="introduce0" id="introduce3">
+		            <h1>麦克</h1>
+		            <img src="assets/images/introducePage/3.png" class="point">
+		        </div>
+		        <div class="introduce0" id="introduce4">
+		            <h1>开关机(长按)</h1>
+		
+		            <h2>LED开关(短按)</h2>
+		            <img src="assets/images/introducePage/4.png" class="point">
+		        </div>
+		        <div class="introduce0" id="introduce5">
+		            <h1>SOS求救(长按)</h1>
+		
+		            <h2>反向寻找(按5下)</h2>
+		            <img src="assets/images/introducePage/5.png" class="point">
+		        </div>
+		        <div class="introduce0" id="introduce6">
+		            <h1>SIM卡</h1>
+		            <img src="assets/images/introducePage/6.png" class="point">
+		        </div>
+		        <div class="introduce0" id="introduce7">
+		            <h1>发送语音(长按)</h1>
+		
+		            <h2>语音播报(短按)</h2>
+		            <img src="assets/images/introducePage/7.png" class="point">
+		        </div>
+		        <div class="introduce0" id="introduce8">
+		            <h1>钥匙环</h1>
+		            <img src="assets/images/introducePage/8.png" class="point">
+		        </div>
+		        <img src="assets/images/introducePage/introduce1.png" id="introduce1_show" class="introduce_show"/>
+		    	<img src="assets/images/introducePage/introduce2.png" id="introduce2_show" class="introduce_show"/>
+		    	<img src="assets/images/introducePage/introduce6.png" id="introduce6_show" class="introduce_show"/>
+		    	<img src="assets/images/location/shandong.gif" id="shandong1" class="shandong"/>
+		    	<img src="assets/images/location/shandong.gif" id="shandong2" class="shandong"/>
+		    	<img src="assets/images/location/shandong.gif" id="shandong3" class="shandong"/>
+		    </div>
+        </div>
+        <div id="icon1">
+            <h3>微小保+牵家万护APP,八大智能功能服务</h3>
+        </div>
+    </div>
+</div>
+
+<div id="fencePage" class="page hidden">
+    <div id="content">
+        <div id="back">
+            <img src="assets/images/helpPage/back.png" alt="返回"/>
+        </div>
+        <img src="assets/images/fencePage/phone.png" id="phone"/>
+
+        <div id="fence">
+            <img src="assets/images/fencePage/yellowround.png" id="yellow"/>
+            <p id="danger"/>老爸于2015-11-16 11:06超出了活动范围</p>
+            <img src="assets/images/fencePage/iconDanger.png" id="iconDanger"/>
+        </div>
+        <div id="icon1">
+            <h3>电子栅栏：让家人远离危险区域</h3>
+        </div>
+    </div>
+</div>
+
+<div id="remindPage" class="page hidden">
+    <audio id="myaudio1" src="assets/mp3/timing1.mp3"></audio>
+    <audio id="myaudio2" src="assets/mp3/timing2.mp3"></audio>
+    <audio id="myaudio3" src="assets/mp3/timing3.mp3"></audio>
+    <div id="content">
+        <div id="back">
+            <img src="assets/images/helpPage/back.png" alt="返回"/>
+        </div>
+        <div id="remind">
+            <img src="assets/images/remindPage/wifi.png" id="wifi"/>
+
+            <h1 id="h1">"爸爸该吃药了"</h1>
+            <h2 id="time1">8:00</h2>
+
+            <h1 id="h2">"中午去逛超市"</h1>
+            <h2 id="time2">12:00</h2>
+
+            <h1 id="h3">"妈妈的生日到了"</h1>
+            <h2 id="time3">15:00</h2>            
+            
+        </div>
+        <div id="product">
+            <img src="assets/images/helpPage/product.png" alt="产品" id="productImg"/>
+            <img src="assets/images/remindPage/round.png" id="round"/>
+            <img src="assets/images/remindPage/icon2.png" id="icon2" class="icon"/>
+            <img src="assets/images/remindPage/icon3.png" id="icon3" class="icon"/>
+            <img src="assets/images/remindPage/icon4.png" id="icon4" class="icon"/>
+        </div>
+        <div id="icon1">
+            <h3>定制提醒：让关怀无微不至，无处不在</h3>
+        </div>
+    </div>
+</div>
+
+<div id="communiPage" class="page hidden">
+	<audio id="myaudio0" src="assets/mp3/message.mp3"></audio>
+    <audio id="myaudio1" src="assets/mp3/massageWord.mp3"></audio>
+    <audio id="myaudio2" src="assets/mp3/eating.mp3"></audio>
+    <div id="content">
+        <div id="back">
+            <img src="assets/images/helpPage/back.png" alt="返回"/>
+        </div>
+        <div id="remind">
+        </div>
+        <div id="product">
+            <img src="assets/images/helpPage/product.png" alt="产品" id="productImg"/>
+            <canvas id="mc1" width="67" height="67"></canvas>
+            <canvas id="mc2" width="67" height="67"></canvas>
+            <h1>收听播音播报</h1>
+            <h2>(短按)</h2>
+        </div>
+        <div id="message_autio">
+        		
+        </div>
+        <div id="productShow">
+        	
+            <div id="message">
+                <img src="assets/images/communiPage/message.png" id="messages"/>
+                <img src="assets/images/communiPage/light.png" id="light"/>
+            </div>
+            <img src="assets/images/communiPage/phone.png" alt="手机" id="phone"/>
+        </div>
+        <div id="line">
+        </div>
+        <div id="icon1">
+            <h3>语音通讯：随时随地聆听牵挂的声音</h3>
+        </div>
+    </div>
+</div>
+
+<div id="findPage" class="page hidden">
+	<audio id="myaudio0" src="assets/mp3/message.mp3"></audio>
+    <div id="content">
+        <div id="back">
+            <img src="assets/images/helpPage/back.png" alt="返回"/>
+        </div>
+        <div id="product">
+            <img src="assets/images/helpPage/product.png" alt="产品" id="productImg"/>
+            <canvas id="mc" width="67" height="67"></canvas>
+            <h1>反向寻找</h1>
+            <h2>(短按5下)</h2>
+        </div>
+        <div id="productShow">
+            <img src="assets/images/location/screen.png" alt="手机" id="phone"/>
+            <img src="assets/images/location/bo.gif" id="bo"/>
+        </div>
+        <div id="dateTime">
+        	<h1>08:44</h1>
+        	<h4>11月19日 星期四</h4>
+        </div>
+        <div id="icon1">
+            <h3>通过反向寻找，帮你找到躲猫猫的手机</h3>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/Preloader.js"></script>
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/Tocca.js/0.2.0-beta.2/Tocca.min.js"></script>
+<script src="assets/libs/greensock-v12-js/src/minified/TweenMax.min.js"></script>
+<script src="assets/libs/greensock-v12-js/src/minified/jquery.gsap.min.js"></script>
+<script src="assets/libs/greensock-v12-js/src/minified/plugins/CSSPlugin.min.js"></script>
+<script src="assets/libs/greensock-v12-js/src/minified/easing/EasePack.min.js"></script>
+
+<script src="assets/js/core/Core.js"></script>
+<script src="assets/js/core/AssetsManager.js"></script>
+<script src="assets/js/utils/ButtonEffectNormar.js"></script>
+<script src="assets/js/utils/CanvasClip.js"></script>
+
+<script src="assets/js/controllers/LoadingPageController.js"></script>
+<script src="assets/js/controllers/Page0Controller.js"></script>
+<script src="assets/js/controllers/LocationController.js?v=1"></script>
+<script src="assets/js/controllers/HelpPageController.js?v=1"></script>
+<script src="assets/js/controllers/LightingPageController.js"></script>
+<script src="assets/js/controllers/LonglifePageController.js"></script>
+<script src="assets/js/controllers/IntroducePageController.js"></script>
+<script src="assets/js/controllers/FencePageController.js"></script>
+<script src="assets/js/controllers/RemindPageController.js"></script>
+<script src="assets/js/controllers/FindPageController.js"></script>
+<script src="assets/js/controllers/CommuniPageController.js?v=1"></script>
+
+<script src="assets/js/core/GeneralManager.js"></script>
+</body>
+</html>
